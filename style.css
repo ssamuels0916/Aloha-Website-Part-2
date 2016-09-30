@@ -1,0 +1,285 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+/*CSS reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**CSS RESET***/
+
+/**Need to look into this**/
+
+.container{
+	padding: 0 2%;
+	margin: 0 auto;
+	max-width: 1240px;
+	width: 100%;
+}
+.clearfix:after{
+	content:"";
+	clear:both;
+	display: table;
+
+}
+body{
+	font-family: 'Raleway', sans-serif;
+	line-height: 2;
+	color: #2d2d2d;
+	font-size: 12px;
+}
+
+
+img{
+	height: auto;
+	width: 100%;
+}
+
+header{
+	margin-bottom: 10px;
+	margin-left: 10px;
+
+	/*overflow: hidden; /**clearfix - **/
+}
+
+.cart{
+	float:right;
+	width: 62px;
+	margin-top: 10px;
+	margin-right: 55px;
+
+}
+.cart img{
+	width: 75%;
+	padding-top: 10px;
+
+	
+}
+.logo{
+	float:left;
+	width:160px;
+}
+.logo img{
+	width: 75%;
+	padding-top: 10px;
+	
+}
+/**BANNER IS THE PARENT TO .BANNER-TEXT**/
+.banner{ 
+	background:linear-gradient(to bottom, rgba(0, 0, 0, .25)0%, rgba(0, 0, 0, 0.25)100%),url('images/banner-girl.png') no-repeat center, url('images/flower-bkgd.jpg') repeat-x center top;
+	background-size: contain, contain, contain;
+	height: 550px;
+	color: white;
+	position: relative;
+	background-position-y: 0,100px,0; 
+}
+.banner-text {
+	text-align: center;
+	position: absolute;	/**positioned absolute to browser window**/
+	top: 50%;
+	transform: translate(0,-50%); /**absolute 50% is relative to the banner and moves the text to the middle**/
+	width: 100%;
+}
+.collection{
+	font-size: 14px;
+	margin-bottom: 10px;
+	
+}
+.summer {
+	font-size: 46px;
+	font-family: 'PlayfairDisplay';
+	line-height: 20px;
+	text-shadow: 1px 1px 1px #000;
+
+}
+
+.about {
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	border-bottom: solid 1px #d7d7d7;
+	height: 200px;
+}
+.about h2{
+	font-size:26px;
+	font-family:'PlayfairDisplay';
+}
+ .italic{
+	
+	font-family:'PlayfairDisplayItalic';
+}
+.bold{
+	font-family: 'PlayfairDisplayBold';
+}
+
+
+.mostLoved{
+	margin-bottom: 50px;
+	
+}
+.mostLoved ul{
+	/*overflow: hidden;*/
+}
+.mostLoved li{
+	display: inline-block;
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+.mostLoved h2{
+	font-family:'PlayfairDisplay';
+	text-align: center;
+	font-size: 26px;
+	padding-bottom: 25px;
+}
+.product-size{
+	height:75%;
+	width: 75%;
+}
+.productDetail {
+	color:#969696;
+
+}
+
+.itemName {
+	color:#e2574c;
+	font-family: 'PlayfairDisplayRegular';
+	font-size: 18px;
+}
+.updates {
+	background: url(images/wave-bkgd.jpg) no-repeat center;
+	height: 350px;
+	background-position: 0 -500px; 
+	text-align: center;
+	color: white;
+	position: relative;
+}
+
+.updates h2{
+font-size: 26px;
+font-family: 'PlayfairDisplay';
+}
+
+.updates-text{
+	text-align: center;
+	position: absolute;	/**positioned absolute to browser window**/
+	top: 50%;
+	transform: translate(0,-50%); /**absolute 50% is relative to the banner and moves the text to the middle**/
+	width: 100%;
+
+}
+.updates-text p{
+	text-shadow: 1px 1px 1px #000;
+}
+/**Form**/
+form {
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.wrapper{
+  background-color: white;
+  width: 100%;
+  border-radius: 10px;
+  
+}
+input{
+  border-radius: 10px;
+  border: 1px  #dee;
+  padding: 7px 30px;
+  
+  
+}
+button {
+  background-color: #e2574c;
+  border-radius: 10px;
+  border: 0;
+  padding:8px 15px;
+  float:right;
+   
+}
+/**Form**/
+
+footer{
+	background-color: #242424;
+	height:260px;
+}
+.contact{
+	float: left;
+	margin-left: 80px;
+	margin-top: 50px;
+	color:white;
+	font-size: 12px;
+	line-height: 25px;
+}
+.contact a{
+	color:white;
+}
+.contact p{
+	font-family: 'PlayfairDisplay';
+}
+.address{
+	color: #969696;
+}
+.social{
+	float: right;
+	margin-right:120px;
+	margin-top: 50px;
+	font-size: 12px;
+
+}
+.i{
+	color:white;
+	font-size: 2px;
+	font-weight: italic;
+}
+.social a{
+	color: white;
+	text-decoration: none;
+}
+.social a:hover{
+	color:#b64036;
+	text-decoration: none;
+}
+
