@@ -1,31 +1,13 @@
-# Project Name
 
-TODO: 
+## Project Name: Aloha Website
 
-## Installation
+The intial phase of this project required coding the front page of a ficticious e-commerce website. The page was built by semantic HTML5 markup, with modular code for future enhancements, i.e. responsive design.
 
-TODO: Describe the installation process
+## Languages and Tools Used
+1. HTML
+2. CSS (with a CSS reset styles, flexbox, and media queries)
+3. Git and GitHub
 
-## Usage
+## Experience
+Completing this phase required learning HTML5, best practices for using CSS3 to style and adding forms. 
 
-TODO: Write usage instructions
-
-## Contributing
-
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
-
-## History
-
-TODO: Write history
-
-## Credits
-
-TODO: Write credits
-
-## License
-
-TODO: Write license
