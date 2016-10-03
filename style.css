@@ -537,6 +537,7 @@ font-family: 'PlayfairDisplay';
   	width: 33%;
   	border-radius: 25px;
   	padding: 5px 5px 5px 10px;
+  	position: relative;
   
 }
 input{
@@ -556,6 +557,8 @@ button {
   padding:8px 16px;
   float:right;
   color: white;
+  position: absolute;
+  right: 1%;
    
 }
 /**Form**/
