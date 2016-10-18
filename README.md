@@ -1,13 +1,14 @@
 
-## Project Name: Aloha Website
+## Project Name: Aloha Website - Part 2
 
-The intial phase of this project required coding the front page of a ficticious e-commerce website. The page was built by semantic HTML5 markup, with modular code for future enhancements, i.e. responsive design.
+The second phase of this project involved responsive design using media queries, creating a flexible layout using Flexbox's properties and adding photo galleries using Flickity a jQuery plugin.
 
 ## Languages and Tools Used
-1. HTML
-2. CSS (with a CSS reset styles, flexbox, and media queries)
+1. HTML5
+2. CSS3 (with a CSS reset styles, flexbox, and media queries)
 3. Git and GitHub
+4. Flickity jQuery plugin
 
 ## Experience
-Completing this phase required learning HTML5, best practices for using CSS3 to style and adding forms. 
+Tested across all major browsers.
 
