@@ -425,7 +425,7 @@ img{
 	text-decoration: none;
 	text-align: center;
 	display: inline;
-	color: #e2574c;
+	color: #db3a26;
 	margin-right: 10px;
 	font-size: 1.1rem;
 }
@@ -617,7 +617,7 @@ padding: 3rem 1rem;
 
 }
 .carousel-cell .itemName {
-	color:#e2574c;
+	color:#db3a26;
 	font-family: 'Playfair Display', 'Arial', 'Helvetica',serif;
 	font-weight: normal;
 	font-style: normal;
@@ -663,6 +663,28 @@ text-shadow: 1px 1px 1px #969696;
 	line-height: 26px;
 	font-size: 1.2rem;
 	padding: 2%;
+}
+/* used for screen readers */
+.screen-reader-text {
+   clip: rect(1px, 1px, 1px, 1px);
+   position: absolute !important;
+   height: 1px;
+   width: 1px;
+   overflow: hidden;
+}
+.screen-reader-text:focus {
+   clip: auto !important;
+   display: block;
+   height: auto;
+   left: 5px;
+   top: 5px;
+   width: auto;
+   z-index: 100000; /* above all content */
+}
+/* Prevent the default blue outline... */
+/* ID selector forces high specificity! */
+#main[tabindex="-1"]:focus {
+   outline: 0;
 }
 
 
