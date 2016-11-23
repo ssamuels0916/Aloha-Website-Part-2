@@ -1,0 +1,49 @@
+/***********HEADER**************/
+
+.hidden {
+    visibility: hidden;
+}
+
+.topNav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 160px;
+    padding-left: 10px;
+    display: flex;
+    height: 100px;
+    img {
+        padding-top: 10px;
+    }
+}
+
+.cart {
+    width: 62px;
+    margin-top: 10px;
+    margin-right: 12px;
+    height: 100px;
+    display: flex;
+}
+
+.site-navigation {
+    display: flex;
+    order: 3;
+    flex: 2 1 100%;
+    justify-content: space-around;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-style: normal;
+    border-top: 1px solid #d7d7d7;
+    padding: 2% 2%;
+    li {
+        text-decoration: none;
+        text-align: center;
+        display: inline;
+        color: #db3a26;
+        margin-right: 10px;
+        font-size: 1.1rem;
+    }
+}

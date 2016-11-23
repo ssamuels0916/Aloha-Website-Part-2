@@ -1,0 +1,39 @@
+    /****************MOST LOVED PRODUCTS STARTS*************/
+    
+    .mostLoved {
+        padding: 3rem 1rem;
+        h2 {
+            font-family: 'Playfair Display', 'Arial', 'Helvetica', serif;
+            font-weight: normal;
+            font-style: normal;
+            text-align: center;
+            font-size: 2.5rem;
+            padding-bottom: 25px;
+            padding-top: 20px;
+        }
+    }
+    
+    .carousel-cell {
+        width: 100%;
+        /* full width */
+        height: 460px;
+        /* height of carousel */
+        text-align: center;
+    }
+    
+    .carousel-cell .productDetail {
+        color: #969696;
+        font-family: 'Raleway', 'Garamond', sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 1em;
+    }
+    
+    .carousel-cell .itemName {
+        color: #db3a26;
+        font-family: 'Playfair Display', 'Arial', 'Helvetica', serif;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 1.5rem;
+    }
+    /****************MOST LOVED PRODUCTS ENDS*************/
