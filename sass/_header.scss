@@ -2,6 +2,7 @@
 
 .hidden {
     visibility: hidden;
+    position: absolute;
 }
 
 .topNav {
@@ -26,6 +27,9 @@
     margin-right: 12px;
     height: 100px;
     display: flex;
+    @include tablet {
+        order: 10;
+    }
 }
 
 .site-navigation {
@@ -33,17 +37,29 @@
     order: 3;
     flex: 2 1 100%;
     justify-content: space-around;
-    font-family: 'Raleway';
-    font-weight: 500;
-    font-style: normal;
     border-top: 1px solid #d7d7d7;
     padding: 2% 2%;
-    li {
+    @include tablet {
+        display: flex;
+        order: 1;
+        flex: 1 1 33.33333%;
+        border-top: none;
+        align-items: center;
+    }
+    a {
+        font-family: 'Raleway';
+        font-weight: 500;
+        font-style: normal;
+        font-size: 1.1rem;
         text-decoration: none;
+        color: #db3a26;
+    }
+    li {
         text-align: center;
         display: inline;
-        color: #db3a26;
         margin-right: 10px;
-        font-size: 1.1rem;
+        @include tablet {
+            margin-right: 15px;
+        }
     }
 }

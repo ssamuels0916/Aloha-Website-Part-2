@@ -1,7 +1,7 @@
     /****************SIGN UP FOR UPDATES STARTS*************/
     
     .updates {
-        background: url(images/wave-bkgd.jpg) no-repeat center;
+        background: url(../../images/wave-bkgd.jpg) no-repeat center;
         height: 380px;
         background-position: 0 -500px;
         text-align: center;
@@ -33,6 +33,10 @@
             line-height: 26px;
             font-size: 1.2rem;
             padding: 2%;
+            @include desktop {
+                width: 50%;
+                margin: 0 auto;
+            }
         }
     }
     /* used for screen readers */
@@ -66,10 +70,13 @@
         margin: 0 auto;
         margin-top: 10px;
         background-color: white;
-        width: 85%;
+        width: 90%;
         border-radius: 30px;
-        padding: 12px 5px;
+        padding: 14px 5px;
         position: relative;
+        @include tablet {
+            width: 40%;
+        }
     }
     
     input[type="email"] {
@@ -94,12 +101,12 @@
         background-color: #e2574c;
         border-radius: 28px;
         border: 0;
-        padding: 12px 28px;
+        padding: 13px 28px;
         float: right;
         color: white;
         position: absolute;
-        right: 1%;
-        bottom: 9%;
+        right: 0;
+        bottom: 0;
         font-size: 1rem;
     }
     

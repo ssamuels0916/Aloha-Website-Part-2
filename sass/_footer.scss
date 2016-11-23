@@ -1,5 +1,12 @@
 /****************FOOTER STARTS***********************/
 
+footer {
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 footer.container {
     background-color: #242424;
     height: 350px;
@@ -17,15 +24,22 @@ footer.container {
     font-weight: normal;
     font-style: normal;
     font-size: 1.2rem;
+    @include tablet {
+        padding-left: 20px;
+        text-align: left;
+        width: 55%;
+    }
+    a {
+        color: white;
+    }
 }
 
-.contact a {
-    color: white;
-}
-
-.address {
+s .address {
     color: #969696;
     text-align: center;
+    @include tablet {
+        text-align: left;
+    }
 }
 
 .social {
@@ -37,11 +51,14 @@ footer.container {
     display: flex;
     justify-content: center;
     color: white;
-}
-
-.social li {
-    /*flex item*/
-    padding: 2%;
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        width: 15%;
+    }
+    li {
+        padding: 2%;
+    }
 }
 
 
@@ -53,6 +70,9 @@ footer.container {
 
 .social span {
     display: none;
+    @include tablet {
+        display: unset;
+    }
 }
 
 .social a {

@@ -436,10 +436,20 @@ img {
   max-width: 600px;
   width: 100%;
   height: auto; }
+  @media (min-width: 600px) {
+    .container {
+      max-width: 1400px; } }
+  @media (min-width: 1240px) {
+    .container {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between; } }
 
 /***********HEADER**************/
 .hidden {
-  visibility: hidden; }
+  visibility: hidden;
+  position: absolute; }
 
 .topNav {
   display: -ms-flexbox;
@@ -465,6 +475,10 @@ img {
   height: 100px;
   display: -ms-flexbox;
   display: flex; }
+  @media (min-width: 600px) {
+    .cart {
+      -ms-flex-order: 10;
+          order: 10; } }
 
 .site-navigation {
   display: -ms-flexbox;
@@ -475,22 +489,37 @@ img {
       flex: 2 1 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  font-family: 'Raleway';
-  font-weight: 500;
-  font-style: normal;
   border-top: 1px solid #d7d7d7;
   padding: 2% 2%; }
-  .site-navigation li {
+  @media (min-width: 600px) {
+    .site-navigation {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-order: 1;
+          order: 1;
+      -ms-flex: 1 1 33.33333%;
+          flex: 1 1 33.33333%;
+      border-top: none;
+      -ms-flex-align: center;
+          align-items: center; } }
+  .site-navigation a {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.1rem;
     text-decoration: none;
+    color: #db3a26; }
+  .site-navigation li {
     text-align: center;
     display: inline;
-    color: #db3a26;
-    margin-right: 10px;
-    font-size: 1.1rem; }
+    margin-right: 10px; }
+    @media (min-width: 600px) {
+      .site-navigation li {
+        margin-right: 15px; } }
 
 /****************BANNER START*************/
 .banner {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("images/banner-girl.png") no-repeat center, url("images/flower-bkgd.jpg") repeat-x center top;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../images/banner-girl.png") no-repeat center, url("../../images/flower-bkgd.jpg") repeat-x center top;
   background-size: contain, contain, cover;
   height: 550px;
   color: white;
@@ -524,32 +553,34 @@ img {
 .about {
   text-align: center;
   height: 300px; }
+  @media (min-width: 1240px) {
+    .about {
+      width: 50%;
+      margin: 0 auto; } }
   .about h2 {
     font-size: 2.5rem;
     font-family: 'Playfair Display', 'Arial', 'Helvetica', serif;
     font-weight: normal;
     font-style: normal;
     padding-top: 7%; }
-    .about h2 p {
-      font-size: 1.4rem;
-      font-family: 'Raleway', 'Garamond', sans-serif;
-      font-weight: 100;
-      font-style: normal;
-      line-height: 40px;
-      padding: 2%; }
+    .about h2 .italic {
+      font-family: 'Playfair Display', 'Arial', 'Helvetica', serif;
+      font-weight: normal;
+      font-style: italic; }
+    .about h2 .bold {
+      font-family: 'Playfair Display', 'Arial', 'Helvetica', serif;
+      font-weight: bold;
+      font-style: normal; }
+  .about p {
+    font-size: 1.4rem;
+    font-family: 'Raleway', 'Garamond', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 40px;
+    padding: 2%; }
 
 .border {
   border-bottom: solid 1px #d7d7d7; }
-
-.italic {
-  font-family: 'Playfair Display', 'Arial', 'Helvetica', serif;
-  font-weight: normal;
-  font-style: italic; }
-
-.bold {
-  font-family: 'Playfair Display', 'Arial', 'Helvetica', serif;
-  font-weight: bold;
-  font-style: normal; }
 
 /*********PRODUCT CATEGORY*************/
 .productCategories {
@@ -564,7 +595,7 @@ img {
   color: white; }
 
 .mens {
-  background: url(images/mens-category.jpg) no-repeat;
+  background: url(../../images/mens-category.jpg) no-repeat;
   background-size: cover;
   height: 200px;
   display: -ms-flexbox;
@@ -576,9 +607,13 @@ img {
   -ms-flex-align: center;
       align-items: center;
   margin: .5%; }
+  @media (min-width: 600px) {
+    .mens {
+      -ms-flex: 0 0 49%;
+          flex: 0 0 49%; } }
 
 .trends {
-  background: url(images/trends-category.jpg) no-repeat;
+  background: url(../../images/trends-category.jpg) no-repeat;
   background-size: cover;
   height: 200px;
   display: -ms-flexbox;
@@ -590,9 +625,13 @@ img {
   -ms-flex-align: center;
       align-items: center;
   margin: .5%; }
+  @media (min-width: 600px) {
+    .trends {
+      -ms-flex: 0 0 24%;
+          flex: 0 0 24%; } }
 
 .glasses {
-  background: url(images/glasses-category.jpg) no-repeat;
+  background: url(../../images/glasses-category.jpg) no-repeat;
   background-size: cover;
   height: 200px;
   display: -ms-flexbox;
@@ -604,9 +643,13 @@ img {
   -ms-flex-align: center;
       align-items: center;
   margin: .5%; }
+  @media (min-width: 600px) {
+    .glasses {
+      -ms-flex: 0 0 24%;
+          flex: 0 0 24%; } }
 
 .sale {
-  background: url(images/sale-category.jpg) no-repeat;
+  background: url(../../images/sale-category.jpg) no-repeat;
   background-size: cover;
   height: 200px;
   display: -ms-flexbox;
@@ -618,9 +661,13 @@ img {
   -ms-flex-align: center;
       align-items: center;
   margin: .5%; }
+  @media (min-width: 600px) {
+    .sale {
+      -ms-flex: 0 0 24%;
+          flex: 0 0 24%; } }
 
 .bags {
-  background: url(images/bags-category.jpg) no-repeat;
+  background: url(../../images/bags-category.jpg) no-repeat;
   background-size: cover;
   height: 200px;
   display: -ms-flexbox;
@@ -632,9 +679,13 @@ img {
   -ms-flex-align: center;
       align-items: center;
   margin: .5%; }
+  @media (min-width: 600px) {
+    .bags {
+      -ms-flex: 0 0 24%;
+          flex: 0 0 24%; } }
 
 .womens {
-  background: url(images/womens-category.jpg) no-repeat;
+  background: url(../../images/womens-category.jpg) no-repeat;
   background-size: cover;
   height: 200px;
   display: -ms-flexbox;
@@ -646,6 +697,10 @@ img {
   -ms-flex-align: center;
       align-items: center;
   margin: .5%; }
+  @media (min-width: 600px) {
+    .womens {
+      -ms-flex: 0 0 49%;
+          flex: 0 0 49%; } }
 
 /****************MOST LOVED PRODUCTS STARTS*************/
 .mostLoved {
@@ -658,6 +713,14 @@ img {
     font-size: 2.5rem;
     padding-bottom: 25px;
     padding-top: 20px; }
+    .mostLoved h2 .italic {
+      font-family: 'Playfair Display', 'Arial', 'Helvetica', serif;
+      font-weight: normal;
+      font-style: italic; }
+    .mostLoved h2 .bold {
+      font-family: 'Playfair Display', 'Arial', 'Helvetica', serif;
+      font-weight: bold;
+      font-style: normal; }
 
 .carousel-cell {
   width: 100%;
@@ -665,6 +728,18 @@ img {
   height: 460px;
   /* height of carousel */
   text-align: center; }
+  @media (min-width: 600px) {
+    .carousel-cell {
+      width: 50%;
+      /* full width */
+      position: absolute;
+      left: 50%; } }
+  @media (min-width: 1240px) {
+    .carousel-cell {
+      width: 25%;
+      /* full width */
+      position: absolute;
+      left: 50%; } }
 
 .carousel-cell .productDetail {
   color: #969696;
@@ -683,7 +758,7 @@ img {
 /****************MOST LOVED PRODUCTS ENDS*************/
 /****************SIGN UP FOR UPDATES STARTS*************/
 .updates {
-  background: url(images/wave-bkgd.jpg) no-repeat center;
+  background: url(../../images/wave-bkgd.jpg) no-repeat center;
   height: 380px;
   background-position: 0 -500px;
   text-align: center;
@@ -713,6 +788,10 @@ img {
     line-height: 26px;
     font-size: 1.2rem;
     padding: 2%; }
+    @media (min-width: 1240px) {
+      .updates-text p {
+        width: 50%;
+        margin: 0 auto; } }
 
 /* used for screen readers */
 .screen-reader-text {
@@ -741,10 +820,13 @@ img {
   margin: 0 auto;
   margin-top: 10px;
   background-color: white;
-  width: 85%;
+  width: 90%;
   border-radius: 30px;
-  padding: 12px 5px;
+  padding: 14px 5px;
   position: relative; }
+  @media (min-width: 600px) {
+    .wrapper {
+      width: 40%; } }
 
 input[type="email"] {
   border-radius: 10px;
@@ -768,12 +850,12 @@ input[type="email"] {
   background-color: #e2574c;
   border-radius: 28px;
   border: 0;
-  padding: 12px 28px;
+  padding: 13px 28px;
   float: right;
   color: white;
   position: absolute;
-  right: 1%;
-  bottom: 9%;
+  right: 0;
+  bottom: 0;
   font-size: 1rem; }
 
 .submit:hover {
@@ -781,6 +863,13 @@ input[type="email"] {
 
 /**Form**/
 /****************FOOTER STARTS***********************/
+@media (min-width: 600px) {
+  footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; } }
+
 footer.container {
   background-color: #242424;
   height: 350px; }
@@ -799,13 +888,20 @@ footer.container {
   font-weight: normal;
   font-style: normal;
   font-size: 1.2rem; }
+  @media (min-width: 600px) {
+    .contact {
+      padding-left: 20px;
+      text-align: left;
+      width: 55%; } }
+  .contact a {
+    color: white; }
 
-.contact a {
-  color: white; }
-
-.address {
+s .address {
   color: #969696;
   text-align: center; }
+  @media (min-width: 600px) {
+    s .address {
+      text-align: left; } }
 
 .social {
   font-size: 1.2rem;
@@ -818,10 +914,15 @@ footer.container {
   -ms-flex-pack: center;
       justify-content: center;
   color: white; }
-
-.social li {
-  /*flex item*/
-  padding: 2%; }
+  @media (min-width: 600px) {
+    .social {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      width: 15%; } }
+  .social li {
+    padding: 2%; }
 
 /*** social icons **/
 .fa {
@@ -829,6 +930,9 @@ footer.container {
 
 .social span {
   display: none; }
+  @media (min-width: 600px) {
+    .social span {
+      display: unset; } }
 
 .social a {
   color: white;

@@ -10,6 +10,16 @@
             font-size: 2.5rem;
             padding-bottom: 25px;
             padding-top: 20px;
+            .italic {
+                font-family: 'Playfair Display', 'Arial', 'Helvetica', serif;
+                font-weight: normal;
+                font-style: italic;
+            }
+            .bold {
+                font-family: 'Playfair Display', 'Arial', 'Helvetica', serif;
+                font-weight: bold;
+                font-style: normal;
+            }
         }
     }
     
@@ -19,6 +29,18 @@
         height: 460px;
         /* height of carousel */
         text-align: center;
+        @include tablet {
+            width: 50%;
+            /* full width */
+            position: absolute;
+            left: 50%;
+        }
+        @include desktop {
+            width: 25%;
+            /* full width */
+            position: absolute;
+            left: 50%;
+        }
     }
     
     .carousel-cell .productDetail {
