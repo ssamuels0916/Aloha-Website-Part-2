@@ -11,6 +11,6 @@ The second phase of this project involved responsive design using media queries,
 3. Git and GitHub
 4. Flickity jQuery plugin
 
-## Experience
-Tested across all major browsers.
+## Learnings
+The site was built with responsive design in mind from the start and adapted for tablet and desktop. Designing responsively made sense as mobile digital media time is now significantly higher then time sent on desktop.
 
