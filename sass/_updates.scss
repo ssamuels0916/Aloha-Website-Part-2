@@ -24,7 +24,7 @@
         /**absolute 50% is relative to the banner and moves the text to the middle**/
         width: 100%;
         font-size: 1.2rem;
-        text-shadow: 1px 1px 1px #000;
+        text-shadow: 2px 2px 2px rgba(100, 100, 100, 0.8);
         p {
             font-family: 'Raleway', 'Garamond', sans-serif;
             font-weight: 100;
@@ -75,7 +75,7 @@
         padding: 14px 5px;
         position: relative;
         @include tablet {
-            width: 40%;
+            width: 60%;
         }
     }
     
@@ -101,7 +101,7 @@
         background-color: #e2574c;
         border-radius: 28px;
         border: 0;
-        padding: 13px 28px;
+        padding: 14px 28px;
         float: right;
         color: white;
         position: absolute;
@@ -114,3 +114,8 @@
         background-color: #913831;
     }
     /**Form**/
+    
+    fieldset {
+        padding: 0;
+        border: none;
+    }

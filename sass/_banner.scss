@@ -7,6 +7,12 @@
         color: white;
         position: relative;
         background-position-y: 0, 45px, 0;
+        top: 70px;
+        margin-bottom: 20%;
+        @include desktop {
+            top: 70px;
+            margin-bottom: 5%;
+        }
     }
     
     .banner-text {

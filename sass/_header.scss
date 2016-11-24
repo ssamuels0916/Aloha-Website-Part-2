@@ -14,7 +14,7 @@
     width: 100%;
     z-index: 4;
     @include tablet {
-        height: 75px;
+        height: 70px;
     }
     @include desktop {
         background-color: transparent;
@@ -59,17 +59,17 @@
     top: 80px;
     width: 100%;
     background-color: white;
-    border-bottom: 1px solid lightgrey;
+    border-top: 1px solid #d7d7d7;
     @include tablet {
         display: flex;
         order: 1;
         flex: 1 1 33.33333%;
-        border-top: none;
+        border-bottom: 1px solid #d7d7d7;
         align-items: center;
         top: 0;
     }
     @include desktop {
-        border-top: 1px solid #d7d7d7;
+        border-bottom: 1px solid #d7d7d7;
         position: absolute;
     }
     a {
@@ -79,6 +79,7 @@
         font-size: 1.1rem;
         text-decoration: none;
         color: #db3a26;
+        text-transform: uppercase;
     }
     li {
         text-align: center;

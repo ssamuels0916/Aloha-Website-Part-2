@@ -464,7 +464,7 @@ img {
   z-index: 4; }
   @media (min-width: 600px) {
     .topNav {
-      height: 75px; } }
+      height: 70px; } }
   @media (min-width: 1240px) {
     .topNav {
       background-color: transparent; } }
@@ -510,7 +510,7 @@ img {
   top: 80px;
   width: 100%;
   background-color: white;
-  border-bottom: 1px solid lightgrey; }
+  border-top: 1px solid #d7d7d7; }
   @media (min-width: 600px) {
     .site-navigation {
       display: -ms-flexbox;
@@ -519,13 +519,13 @@ img {
           order: 1;
       -ms-flex: 1 1 33.33333%;
           flex: 1 1 33.33333%;
-      border-top: none;
+      border-bottom: 1px solid #d7d7d7;
       -ms-flex-align: center;
           align-items: center;
       top: 0; } }
   @media (min-width: 1240px) {
     .site-navigation {
-      border-top: 1px solid #d7d7d7;
+      border-bottom: 1px solid #d7d7d7;
       position: absolute; } }
   .site-navigation a {
     font-family: 'Raleway';
@@ -533,7 +533,8 @@ img {
     font-style: normal;
     font-size: 1.1rem;
     text-decoration: none;
-    color: #db3a26; }
+    color: #db3a26;
+    text-transform: uppercase; }
   .site-navigation li {
     text-align: center;
     display: inline;
@@ -549,7 +550,13 @@ img {
   height: 550px;
   color: white;
   position: relative;
-  background-position-y: 0, 45px, 0; }
+  background-position-y: 0, 45px, 0;
+  top: 70px;
+  margin-bottom: 20%; }
+  @media (min-width: 1240px) {
+    .banner {
+      top: 70px;
+      margin-bottom: 5%; } }
 
 .banner-text {
   text-align: center;
@@ -624,7 +631,9 @@ img {
     font-family: 'Raleway', 'Garamond', sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 2rem; }
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8); }
     .productCategories a:hover {
       color: antiquewhite; }
 
@@ -816,7 +825,7 @@ img {
   /**absolute 50% is relative to the banner and moves the text to the middle**/
   width: 100%;
   font-size: 1.2rem;
-  text-shadow: 1px 1px 1px #000; }
+  text-shadow: 2px 2px 2px rgba(100, 100, 100, 0.8); }
   .updates-text p {
     font-family: 'Raleway', 'Garamond', sans-serif;
     font-weight: 100;
@@ -863,7 +872,7 @@ img {
   position: relative; }
   @media (min-width: 600px) {
     .wrapper {
-      width: 40%; } }
+      width: 60%; } }
 
 input[type="email"] {
   border-radius: 10px;
@@ -887,7 +896,7 @@ input[type="email"] {
   background-color: #e2574c;
   border-radius: 28px;
   border: 0;
-  padding: 13px 28px;
+  padding: 14px 28px;
   float: right;
   color: white;
   position: absolute;
@@ -899,6 +908,10 @@ input[type="email"] {
   background-color: #913831; }
 
 /**Form**/
+fieldset {
+  padding: 0;
+  border: none; }
+
 /****************FOOTER STARTS***********************/
 @media (min-width: 600px) {
   footer {
