@@ -2,7 +2,7 @@ $(function() {
 
 
     // smoothly scroll when you click on the navigation links
-    $('a').smoothScroll();
+    $('.site-navigation a').smoothScroll();
 
 
     $('.scrollTop').click(function() {

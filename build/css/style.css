@@ -764,6 +764,9 @@ img {
     padding-bottom: 25px;
     padding-top: 40px;
     margin-top: 15%; }
+    @media (min-width: 600px) {
+      .mostLoved h2 {
+        margin-top: 0; } }
     .mostLoved h2 .italic {
       font-family: 'Playfair Display', 'Arial', 'Helvetica', serif;
       font-weight: normal;
@@ -797,7 +800,8 @@ img {
   font-family: 'Raleway', 'Garamond', sans-serif;
   font-weight: normal;
   font-style: normal;
-  font-size: 1em; }
+  font-size: 1em;
+  text-transform: uppercase; }
 
 .carousel-cell .itemName {
   color: #db3a26;
@@ -809,7 +813,7 @@ img {
 /****************MOST LOVED PRODUCTS ENDS*************/
 /****************SIGN UP FOR UPDATES STARTS*************/
 .updates {
-  background: url(../../images/wave-bkgd.jpg) no-repeat center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url(../../images/wave-bkgd.jpg) no-repeat center;
   height: 380px;
   background-position: 0 -500px;
   text-align: center;
@@ -905,7 +909,6 @@ input[type="email"] {
   border-radius: 28px;
   border: 0;
   padding: 7px 27px;
-  float: right;
   color: white;
   position: absolute;
   right: 4px;

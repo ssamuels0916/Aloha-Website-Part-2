@@ -11,6 +11,9 @@
             padding-bottom: 25px;
             padding-top: 40px;
             margin-top: 15%;
+            @include tablet {
+                margin-top: 0;
+            }
             .italic {
                 font-family: 'Playfair Display', 'Arial', 'Helvetica', serif;
                 font-weight: normal;
@@ -50,6 +53,7 @@
         font-weight: normal;
         font-style: normal;
         font-size: 1em;
+        text-transform: uppercase;
     }
     
     .carousel-cell .itemName {
