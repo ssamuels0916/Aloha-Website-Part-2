@@ -6,8 +6,7 @@ $(function() {
 
 
     $('.scrollTop').click(function() {
-        $('html, body').animate({ scrollTop: 0 }, 5000);
-        return false;
+        $('html, body').smoothScroll(5000);
     });
 
 

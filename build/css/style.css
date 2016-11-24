@@ -585,18 +585,20 @@ img {
 /****************ABOUT STARTS*************/
 .about {
   text-align: center;
-  height: 300px;
-  margin-top: 35%; }
+  height: 300px; }
   @media (min-width: 1240px) {
     .about {
       width: 50%;
-      margin: 0 auto;
-      margin-top: 15%; } }
+      margin: 0 auto; } }
   .about h2 {
     font-size: 2.5rem;
     font-family: 'Playfair Display', 'Arial', 'Helvetica', serif;
     font-weight: normal;
-    font-style: normal; }
+    font-style: normal;
+    margin-top: 35%; }
+    @media (min-width: 1240px) {
+      .about h2 {
+        margin-top: 15%; } }
     .about h2 .italic {
       font-family: 'Playfair Display', 'Arial', 'Helvetica', serif;
       font-weight: normal;
@@ -760,7 +762,8 @@ img {
     text-align: center;
     font-size: 2.5rem;
     padding-bottom: 25px;
-    padding-top: 40px; }
+    padding-top: 40px;
+    margin-top: 15%; }
     .mostLoved h2 .italic {
       font-family: 'Playfair Display', 'Arial', 'Helvetica', serif;
       font-weight: normal;

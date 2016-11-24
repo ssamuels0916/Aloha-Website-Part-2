@@ -3,17 +3,19 @@
 .about {
     text-align: center;
     height: 300px;
-    margin-top: 35%;
     @include desktop {
         width: 50%;
         margin: 0 auto;
-        margin-top: 15%;
     }
     h2 {
         font-size: 2.5rem;
         font-family: 'Playfair Display', 'Arial', 'Helvetica', serif;
         font-weight: normal;
         font-style: normal;
+        margin-top: 35%;
+        @include desktop {
+            margin-top: 15%;
+        }
         .italic {
             font-family: 'Playfair Display', 'Arial', 'Helvetica', serif;
             font-weight: normal;
