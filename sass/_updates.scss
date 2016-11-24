@@ -12,6 +12,9 @@
             font-family: 'Playfair Display', 'Arial', 'Helvetica', serif;
             margin-bottom: 2%;
             text-shadow: 1px 1px 1px #969696;
+            @include desktop {
+                margin-top: 60px;
+            }
         }
     }
     
@@ -72,7 +75,7 @@
         background-color: white;
         width: 90%;
         border-radius: 30px;
-        padding: 14px 5px;
+        padding: 12px 5px;
         position: relative;
         @include tablet {
             width: 60%;
@@ -101,12 +104,12 @@
         background-color: #e2574c;
         border-radius: 28px;
         border: 0;
-        padding: 14px 28px;
+        padding: 7px 27px;
         float: right;
         color: white;
         position: absolute;
-        right: 0;
-        bottom: 0;
+        right: 4px;
+        bottom: 5px;
         font-size: 1rem;
     }
     

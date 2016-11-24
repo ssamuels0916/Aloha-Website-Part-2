@@ -22,7 +22,8 @@
 }
 
 .logo {
-    width: 160px;
+    width: 100px;
+    height: 30px;
     padding-left: 10px;
     display: flex;
     z-index: 2;
@@ -80,6 +81,7 @@
         text-decoration: none;
         color: #db3a26;
         text-transform: uppercase;
+        cursor: pointer;
     }
     li {
         text-align: center;
