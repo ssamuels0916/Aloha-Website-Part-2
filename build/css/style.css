@@ -509,8 +509,7 @@ img {
   position: absolute;
   top: 80px;
   width: 100%;
-  background-color: white;
-  border-top: 1px solid #d7d7d7; }
+  background-color: white; }
   @media (min-width: 600px) {
     .site-navigation {
       display: -ms-flexbox;
@@ -594,7 +593,7 @@ img {
     font-family: 'Playfair Display', 'Arial', 'Helvetica', serif;
     font-weight: normal;
     font-style: normal;
-    margin-top: 35%; }
+    margin-top: 15%; }
     @media (min-width: 1240px) {
       .about h2 {
         margin-top: 15%; } }
